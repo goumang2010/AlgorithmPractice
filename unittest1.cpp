@@ -1,10 +1,8 @@
 
 #include "stdafx.h"
 #include "CppUnitTest.h"
-
 #include "Mypractice.h"
 //#pragma comment(lib, "algorithmPractice.lib")
-//extern "C" _declspec(dllimport) int Add(int a, int b);
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace std;
 using namespace AlgorithmPractice;
@@ -18,14 +16,35 @@ namespace AlgorithmPracticeTest
 	public:
 
 	
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(onlineAlgoTest)
 		{
-			vector<int> testarray = { 1,2,3,4,5,556,6,7 };
+			const vector<int> testarray = { 1,2,-3,-4,5,5,-1,6,-6,7 };
+			int x = onlineAlgo( testarray);
+			Assert::AreEqual(x, 16);
+		}
 
-			int x = testMethod(3);
+
+		TEST_METHOD(CheckIfAlldiff_1TEST)
+		{
+			string str1 = "zxcvbnmloikjuhygtfrdewsqa";
+			string str2 = "zxcvbnmmloikjuhygtfrdewsqa";
+			Assert::AreEqual(CheckIfAlldiff_1(str1), true);
+			Assert::AreEqual(CheckIfAlldiff_1(str2), false);
+
+			
 
 
-			Assert::AreEqual(x, 5);
+		}
+		TEST_METHOD(CheckIfAlldiff_2TEST)
+		{
+			string str1 = "zxcvbnmloikjuhygtfrdewsqa";
+			string str2 = "zxcvbnmmloikjuhygtfrdewsqa";
+
+			Assert::AreEqual(CheckIfAlldiff_2(str1), true);
+			Assert::AreEqual(CheckIfAlldiff_2(str2), false);
+
+
+
 		}
 
 		
