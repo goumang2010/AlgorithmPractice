@@ -47,5 +47,14 @@
     <ClCompile Include="sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="search_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="test_method.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
