@@ -16,6 +16,9 @@
     <Filter Include="源文件\CC150">
       <UniqueIdentifier>{9676b8a2-32da-44fc-8914-3b39e066f445}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TEST">
+      <UniqueIdentifier>{f226233f-6840-4089-a710-a280b708a42e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -36,6 +39,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="unittest1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sort_test.cpp">
+      <Filter>TEST</Filter>
+    </ClCompile>
+    <ClCompile Include="sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
